@@ -82,7 +82,7 @@ export const TextInput = (props: Props) => {
             isDisabled={props.disabled}
             on:click={handleImageUploadClick}
           >
-            <span style={{ 'font-family': 'Poppins, sans-serif' }}>Image Upload</span>
+            <span style={{ 'font-family': 'Ubuntu, sans-serif' }}>Image Upload</span>
           </ImageUploadButton>
           <input style={{ display: 'none' }} multiple ref={fileUploadRef as HTMLInputElement} type="file" onChange={handleFileChange} />
         </>
@@ -103,7 +103,7 @@ export const TextInput = (props: Props) => {
           isDisabled={props.disabled}
           on:click={props.onMicrophoneClicked}
         >
-          <span style={{ 'font-family': 'Poppins, sans-serif' }}>Record Audio</span>
+          <span style={{ 'font-family': 'Ubuntu, sans-serif' }}>Record Audio</span>
         </RecordAudioButton>
       ) : null}
       <SendButton
@@ -113,7 +113,7 @@ export const TextInput = (props: Props) => {
         class="m-0 h-14 flex items-center justify-center"
         on:click={submit}
       >
-        <span style={{ 'font-family': 'Poppins, sans-serif' }}>Send</span>
+        <span style={{ 'font-family': 'Ubuntu, sans-serif' }}>Send</span>
       </SendButton>
     </div>
   );
